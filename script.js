@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function showNextQuote() {
     const currentQuote = quotes[currentIndex];
     quoteText.textContent = `"${currentQuote.text}"`;
-     quoteAuthor.textContent = ` - ${currentQuote.author}`;
+    quoteAuthor.textContent = ` - ${currentQuote.author}`;
     currentIndex = (currentIndex + 1) % quotes.length;
   }
 
